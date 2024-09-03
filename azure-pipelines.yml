@@ -12,7 +12,6 @@ variables:
   azureServiceConnectionId: 'udacity-project'
   webAppName: 'sm-house-price-prediction'
   environmentName: 'flask-ml-service'
-  pythonVersion: '3.12'
   projectRoot: $(System.DefaultWorkingDirectory)
 
 stages:
@@ -22,10 +21,6 @@ stages:
   - job: BuildJob
     pool: myAgentPool
     steps:
-    - task: UsePythonVersion@0
-      inputs:
-        versionSpec: '$(pythonVersion)'
-      displayName: 'Use Python $(pythonVersion)'
     
     - script: |
         python -m venv antenv
