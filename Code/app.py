@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, jsonify
 from flask.logging import create_logger
 import logging
@@ -27,10 +28,11 @@ def home():
 @app.route("/predict", methods=['POST'])
 def predict():
     # Performs an sklearn prediction
+    logging.info("Path: %s", os.getcwd())
     try:
         # Load pretrained model as clf. Try any one model.
-        clf = joblib.load("./models/GradientBoostingRegressor.joblib")
-    except:
+        clf = joblib.load(os.getcwd() + "/Code/models/LinearRegression.joblib")
+    except Exception as e:
         LOG.info("JSON payload: %s json_payload")
         return "Model not loaded"
 
