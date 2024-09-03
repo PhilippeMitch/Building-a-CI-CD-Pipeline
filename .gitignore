@@ -105,3 +105,9 @@ venv.bak/
 
 # Pycharm
 .idea/
+
+.DS_Store
+.DS_Store?
+.ipynb_checkpoints
+.azure
+
