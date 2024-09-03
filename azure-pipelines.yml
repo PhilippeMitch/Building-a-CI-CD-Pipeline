@@ -12,11 +12,12 @@ variables:
   azureServiceConnectionId: 'udacity-project'
   webAppName: 'sm-house-price-prediction'
   environmentName: 'flask-ml-service'
+  pythonVersion: '3.12'
   projectRoot: $(System.DefaultWorkingDirectory)
 
 stages:
 - stage: Build
-  displayName: Build stage
+  displayName: Build Web App
   jobs:
   - job: BuildJob
     pool: myAgentPool
