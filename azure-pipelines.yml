@@ -25,10 +25,10 @@ stages:
     - script: |
         python -m venv antenv
         source antenv/bin/activate
+        PIP_BREAK_SYSTEM_PACKAGES=1
         python -m pip install --upgrade pip
         pip install setup
-        PIP_BREAK_SYSTEM_PACKAGES=1
-        pip install -r requirements.txt
+        pip install -r requirements.txt --break-system-packages
       workingDirectory: $(projectRoot)
       displayName: "Install requirements"
 
