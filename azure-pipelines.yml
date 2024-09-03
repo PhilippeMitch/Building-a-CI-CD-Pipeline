@@ -6,9 +6,7 @@
 trigger:
 - main
 
-pool:
-  vmImage: $(vmImageName)
-  name: myAgentPool
+pool: udacityProjectVm
 
 steps:
 - script: echo Hello, world!
