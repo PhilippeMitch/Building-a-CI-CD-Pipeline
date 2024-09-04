@@ -31,7 +31,7 @@ def predict():
     logging.info("Path: %s", os.getcwd())
     try:
         # Load pretrained model as clf. Try any one model.
-        clf = joblib.load(os.getcwd() + "/Code/models/LinearRegression.joblib")
+        clf = joblib.load(os.getcwd() + "/LinearRegression.joblib")
     except Exception as e:
         LOG.info("JSON payload: %s json_payload")
         return "Model not loaded"
