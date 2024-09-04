@@ -1,10 +1,10 @@
-FROM python:3.7.3-stretch
+FROM python:3.9-slim
 
 # Working Directory
 WORKDIR /app
 
 # Copy source code to working directory
-COPY . Code/app.py /app/
+COPY . app.py /app/
 
 # Install packages from requirements.txt
 # hadolint ignore=DL3013
