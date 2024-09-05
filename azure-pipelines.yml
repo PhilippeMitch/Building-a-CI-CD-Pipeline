@@ -10,7 +10,7 @@ pool: myAgentPool
 
 variables:
   azureServiceConnectionId: 'udacity-project'
-  webAppName: 'sm-house-price-prediction'
+  webAppName: 'flask-price-prediction'
   environmentName: 'flask-ml-service'
   projectRoot: $(System.DefaultWorkingDirectory)
 
@@ -58,7 +58,7 @@ stages:
         deploy:
           steps:
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : sm-house-price-prediction'
+            displayName: 'Deploy Azure Web App : flask-price-prediction'
             inputs:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
