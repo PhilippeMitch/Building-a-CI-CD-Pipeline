@@ -10,7 +10,7 @@ pool: myAgentPool
 
 variables:
   azureServiceConnectionId: 'udacity-project'
-  webAppName: 'flask-price-prediction'
+  webAppName: 'flask-app-proj2-mitch'
   environmentName: 'flask-ml-service'
   projectRoot: $(System.DefaultWorkingDirectory)
 
