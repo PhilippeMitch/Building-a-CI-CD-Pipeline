@@ -9,7 +9,7 @@ trigger:
 pool: myAgentPool
 
 variables:
-  azureServiceConnectionId: 'udacity-project'
+  azureServiceConnectionId: 'myServiceConnection'
   webAppName: 'flask-app-proj2-mitch'
   environmentName: 'flask-ml-service'
   projectRoot: $(System.DefaultWorkingDirectory)
