@@ -5,8 +5,8 @@ class WebsiteTestUser(HttpUser):
 
     @task(1)
     def test1(self):
-        self.client.get("https://flask-price-prediction.azurewebsites.net")
+        self.client.get("https://flask-app-proj2-mitch.azurewebsites.net")
 
     @task(2)
     def test2(self):
-        self.client.post("https://flask-price-prediction.azurewebsites.net:443/predict")
+        self.client.post("https://flask-app-proj2-mitch.azurewebsites.net:443/predict")
