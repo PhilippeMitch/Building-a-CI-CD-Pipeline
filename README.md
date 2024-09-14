@@ -1,6 +1,3 @@
-# Azure DevOps
-[![Build Status](https://dev.azure.com/odluser267231/sm-house-price-prediction/_apis/build/status%2FPhilippeMitch.Building-a-CI-CD-Pipeline%20(14)?branchName=main)](https://dev.azure.com/odluser267231/sm-house-price-prediction/_build/latest?definitionId=14&branchName=main)
-
 [![Python application test with Github Actions](https://github.com/PhilippeMitch/Building-a-CI-CD-Pipeline/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/PhilippeMitch/Building-a-CI-CD-Pipeline/actions/workflows/pythonapp.yml)
 # Building a CICD Pipeline
 In this project, you will build a Github repository from scratch and create a scaffolding that will assist you in performing both Continuous Integration and Continuous Delivery. You'll use Github Actions along with a Makefile, requirements.txt and application code to perform an initial lint, test, and install cycle. Next, you'll integrate this project with Azure Pipelines to enable Continuous Delivery to Azure App Service.
@@ -87,3 +84,6 @@ Go to the Project settings >> Service connection settings, and ensure you set up
 ### Create a Pipeline
 * Follow the instruction [here](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops&tabs=linux)
 ![](https://github.com/PhilippeMitch/Building-a-CI-CD-Pipeline/blob/main/screenshots/azure-devops-cicd.jpg)
+
+## Demo
+Youtube link: [Building a CICD Pipeline](https://youtu.be/4LSARiDFK3E)
