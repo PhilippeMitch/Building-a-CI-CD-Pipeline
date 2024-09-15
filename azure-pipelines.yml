@@ -6,7 +6,7 @@
 trigger:
 - main
 
-pool: myAgentPool
+pool: myAgenPool
 
 variables:
   azureServiceConnectionId: 'myServiceConnection'
@@ -19,7 +19,7 @@ stages:
   displayName: Build Web App
   jobs:
   - job: BuildJob
-    pool: myAgentPool
+    pool: myAgenPool
     steps:
     
     - script: |
