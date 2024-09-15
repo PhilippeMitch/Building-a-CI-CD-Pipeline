@@ -86,4 +86,4 @@ Go to the Project settings >> Service connection settings, and ensure you set up
 ![](https://github.com/PhilippeMitch/Building-a-CI-CD-Pipeline/blob/main/screenshots/azure-devops-cicd.jpg)
 
 ## Demo
-Youtube link: [Building a CICD Pipeline](https://youtu.be/4LSARiDFK3E)
+Youtube link: [Building a CICD Pipeline](https://youtu.be/FpCsQfDN4xw)
